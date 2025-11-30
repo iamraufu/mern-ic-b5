@@ -1,0 +1,147 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Navbar */
+
+.custom-navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Hero Section */
+
+.hero-container {
+    background-image: url(../images/hero-cover.jpg);
+    height: 450px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.motto {
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 600;
+}
+
+.input-field {
+    outline: none;
+    border: none;
+}
+
+
+/* Hero Features */
+
+.hero-features-container {
+    margin-top: -3.5rem;
+}
+
+.features-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: justify;
+}
+
+
+/* Why Choose Us */
+
+.why-choose-us-container {
+    background-color: #fafbfc;
+}
+
+.line {
+    width: 30px;
+    height: 1px;
+    background-color: #979797;
+}
+
+
+/* Count */
+
+.count-container {
+    background-color: #f4f5f8;
+}
+
+
+/* How it works */
+
+.feature-list {
+    border-left: 3px solid #f7f8fa;
+}
+
+.round-div {
+    background-image: linear-gradient(135deg, #23a999 1%, #00a1ba 52%, #006597);
+    height: 50px;
+    width: 50px;
+    top: 0;
+    left: -25px;
+}
+
+.feature-number {
+    left: -5px;
+    top: 11px;
+}
+
+
+/* testimonial */
+
+.testimonial-description {
+    border-left: 10px solid #00a1ba;
+}
+
+
+/* app download */
+
+.app-btn {
+    background-color: #c71f66;
+}
+
+
+/* Contact */
+
+.service-request-image {
+    top: -115px;
+    right: 0;
+}
+
+
+/* Footer */
+
+.footer-container {
+    background-color: #ebecef;
+}
+
+.footer-font {
+    font-size: 14px;
+}
+
+.bg-footer {
+    background-color: #dfe0e3;
+}
+
+@media (max-width: 405px) {
+    .hero-features-container {
+        margin-top: -1rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .service-request-image {
+        top: -85px;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-request-image {
+        top: -65px;
+    }
+}
+
+@media (max-width: 576px) {
+    .service-request-image {
+        top: -60px;
+    }
+}
