@@ -1,0 +1,12 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-image: url(../images/bg.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}

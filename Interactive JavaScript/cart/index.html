@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Shopping Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container pb-5">
+            <h1 class="text-center h3 mt-3">Interactive Shopping Cart</h1>
+
+            <div class="row mt-5 justify-content-center align-items-center">
+                <div class="col-md-3">
+                    <img src="https://m.media-amazon.com/images/I/61ME8jRwbVL._AC_UF894,1000_QL80_.jpg" width="250" class="img-fluid mx-auto d-block" alt="macbook">
+                    <h2 class="text-center h6 mt-3">Apple Macbook</h2>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <button onclick="handleProductChange('laptop',false)" class="btn btn-danger px-3">Remove</button>
+                        <input id="laptop-count" class="text-center form-control" type="text" value="1">
+                        <button onclick="handleProductChange('laptop', true)" class="btn btn-success px-3">Add</button>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <h3 class="h6 text-center text-muted">$<span id="laptop-total">1599</span></h3>
+                </div>
+            </div>
+
+            <div class="row mt-5 justify-content-center align-items-center">
+                <div class="col-md-3">
+                    <img src="https://www.att.com/scmsassets/global/devices/phones/apple/apple-iphone-17-pro/defaultimage/cosmic-orange-hero-zoom.png" width="180" class="img-fluid mx-auto d-block" alt="macbook">
+                    <h2 class="text-center h6 mt-3">Apple iphone 17</h2>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <button onclick="handleProductChange('phone', false)" class="btn btn-danger px-3">Remove</button>
+                        <input id="phone-count" class="text-center form-control" type="text" value="1">
+                        <button onclick="handleProductChange('phone', true)" class="btn btn-success px-3">Add</button>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <h3 class="h6 text-center text-muted">$<span id="phone-total">999</span></h3>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center mt-5">
+                <div class="col-md-8">
+                    <h2 class="h5">Subtotal</h2>
+                    <h2 class="h5">TAX</h2>
+                    <h2 class="h5">Grand Total</h2>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="h5 text-center">$<span id="sub-total">2598</span></h2>
+                    <h2 class="h5 text-center">$<span id="tax-amount">165</span></h2>
+                    <h2 class="h5 text-center">$<span id="grand-total">2763</span></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
