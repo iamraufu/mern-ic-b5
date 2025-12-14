@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interesting API</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- JS -->
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container my-5">
+        <h1 class="text-center text-muted my-3">JavaScript Interesting API</h1>
+
+        <div class="row justify-content-between align-items-center">
+            <div class="col-md-4">
+                <!-- API 1 -->
+                <h2 class="h5 text-center mb-5">Get Random Dog</h2>
+                <img id="dogImage" width="250" class="img-fluid mx-auto d-block" src="" alt="Random Dog">
+                <video id="dogVideo" width="250" controls autoplay>
+    <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+</video>
+            </div>
+
+            <div class="col-md-4">
+                <!-- API 2 -->
+                <h2 class="h5 text-center my-3">Get Random Cat</h2>
+                <img width="250" class="img-fluid mx-auto d-block" id="catImage" src="" alt="">
+            </div>
+
+            <div class="col-md-4">
+                <!-- API 3 -->
+                <h2 class="h5 text-center my-3">This Person Does not Exist</h2>
+                <img width="250" class="img-fluid mx-auto d-block" id="personImage" src="" alt="">
+
+            </div>
+        </div>
+
+        <h2>Get Countries Information</h2>
+        <h3>Total Independent Countries <span id="count"></span></h3>
+        <div id="country">
+        </div>
+
+        <h2>Get Weather Information</h2>
+        <input type="text" class="form-control" id="location">
+        <button onclick="getWeather()" class="btn btn-success">Get Weather</button>
+
+        <div id="weatherData"></div>
+
+    </div>
+
+</body>
+
+</html>
